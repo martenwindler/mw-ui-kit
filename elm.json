@@ -1,8 +1,8 @@
 {
     "type": "package",
     "name": "martenwindler/mw-ui-kit",
-    "summary": "",
-    "license": "The Unlicense",
+    "summary": "!important",
+    "license": "0BSD",
     "version": "0.0.1",
     "exposed-modules": [
         "MW.Base.Theme",

@@ -1,3 +1,3 @@
 # UI-KIT
 
-Just another ... to style things to keep track of when it's over.
+A personal ui-kit for everyday webcomponents.

@@ -3,6 +3,7 @@
 # ──────────────────────────────────────────────────────────────
 
 # X
+dist/
 package-lock.json
 node_modules/
 elm-stuff/
@@ -10,6 +11,7 @@ temp
 js-dev
 .vite/
 deps/
+**/**.bak
 
 # X
 utils/*
@@ -21,6 +23,7 @@ src/MW/**/*.elm
 src/*.elm
 src/*.elm.example
 !src/MW/**/.gitkeep
+!src/Framework.elm
 
 # ASSETS
 **/*.jpeg

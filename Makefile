@@ -5,8 +5,11 @@ SRC=src/Framework.elm
 
 all: build
 
+install: 
+	npm install
+
 start:
-	npm start
+	utils/start_2
 
 format:
 	$(ELM)-format src/ --yes
@@ -28,4 +31,4 @@ clean:
 keep:
 	find src -type d -exec touch {}/.gitkeep \;
 
-.PHONY: all start format build docs clean setup keep
+.PHONY: all install start format build docs clean setup keep

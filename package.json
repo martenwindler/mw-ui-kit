@@ -9,11 +9,11 @@
         "format": "elm-format src/ --yes"
     },
     "author": "",
-    "license": "ISC",
+    "license": "0BSD",
     "devDependencies": {
         "elm": "^0.19.1",
         "elm-format": "^0.8.1",
-        "elm-live": "^3.4.1",
+        "elm-live": "^4.0.2",
         "html-minifier": "^4.0.0",
         "uglify-js": "^3.17.0"
     }

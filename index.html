@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>MW-UI-KIT</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="dist/js/framework.js"></script>
+</head>
+<body>
+    <div id="elm-app"></div>
+    <script>
+        var app = Elm.Framework.init({
+            node: document.getElementById('elm-app'),
+            flags: {
+                width: window.innerWidth,
+                height: window.innerHeight,
+                locationHref: window.location.href
+            }
+        });
+    </script>
+</body>
+</html>
