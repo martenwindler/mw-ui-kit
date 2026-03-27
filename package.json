@@ -1,0 +1,20 @@
+{
+    "name": "mw-ui-kit",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "sh utils/start",
+        "build": "sh utils/build",
+        "format": "elm-format src/ --yes"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "elm": "^0.19.1",
+        "elm-format": "^0.8.1",
+        "elm-live": "^3.4.1",
+        "html-minifier": "^4.0.0",
+        "uglify-js": "^3.17.0"
+    }
+}

@@ -1,0 +1,39 @@
+# ──────────────────────────────────────────────────────────────
+# UI-KIT - MASTER GITIGNORE
+# ──────────────────────────────────────────────────────────────
+
+# X
+package-lock.json
+node_modules/
+elm-stuff/
+temp
+js-dev
+.vite/
+deps/
+
+# X
+utils/*
+!utils/print__folder_tree.sh
+!utils/clean__zone-identifier.sh
+
+# X
+src/MW/**/*.elm
+src/*.elm
+src/*.elm.example
+!src/MW/**/.gitkeep
+
+# ASSETS
+**/*.jpeg
+**/*.jpg
+**/*.png
+**/*.svg
+
+**/*.woff2
+**/*.woff
+**/*.ttf
+**/*.eot
+
+# DATA 
+secret.key
+/data/*.json
+!/data/config.json.template
