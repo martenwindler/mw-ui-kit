@@ -5,6 +5,13 @@
     <title>MW-UI-KIT</title>
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="dist/js/framework.js"></script>
+    <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png?v=19941226" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg?v=19941226" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico?v=19941226" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png?v=19941226" />
+    
+    <link rel="manifest" href="assets/img/site.webmanifest?v=19941226" />
 </head>
 <body>
     <div id="elm-app"></div>
@@ -15,6 +22,24 @@
                 width: window.innerWidth,
                 height: window.innerHeight,
                 locationHref: window.location.href
+            }
+        });
+        // Der Listener für den Copy-Port
+        app.ports.copyToClipboard.subscribe(function(text) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    // Optional: Hier könnte man ein Event zurück an Elm schicken 
+                    // um eine "Erfolgreich kopiert!" Meldung anzuzeigen
+                    console.log('Farbe kopiert:', text);
+                });
+            } else {
+                // Fallback für ältere Browser
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textArea);
             }
         });
     </script>
