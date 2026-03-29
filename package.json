@@ -1,11 +1,13 @@
 {
     "name": "mw-ui-kit",
     "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
+    "description": "Personal UI-KIT for everyday webcomponents",
+    "main": "src/index.ts",
     "scripts": {
-        "start": "sh utils/start",
-        "build": "sh utils/build",
+        "dev": "vite",
+        "start": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
         "format": "elm-format src/ --yes"
     },
     "author": "",
@@ -13,8 +15,8 @@
     "devDependencies": {
         "elm": "^0.19.1",
         "elm-format": "^0.8.1",
-        "elm-live": "^4.0.2",
-        "html-minifier": "^4.0.0",
-        "uglify-js": "^3.17.0"
+        "typescript": "^5.0.0",
+        "vite": "^8.0.3",
+        "vite-plugin-elm": "^3.0.1"
     }
 }
